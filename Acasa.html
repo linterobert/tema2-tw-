@@ -7,7 +7,7 @@
     </head>
     <body>
 		<div class = "bara_sus" >
-			<img src = "imagini/off-white-logo.svg" onclick="schimbare_stare()">
+			<img src = "imagini/off-white-logo.svg" id = "logo" onclick="schimbare_stare()" >
 			<nav class = "meniu" >
 				<ul class = "meniu_buton"><a href="Acasa.html">Acasa</a></ul>
 				<ul class = "meniu_buton"><a href = "Despre noi.html">Despre noi</a></ul>
@@ -20,8 +20,8 @@
 			<nav class = "meniu_lateral" >
 				<div id="Conecteaza-te"><ul><h3> Conecteaza-te </h3> </ul></div>
 				<div id="Username"><ul> Username:<input id="username"> </ul></div>
-				<div id="Password"><ul> Password: <input id="password"> </ul></div>
-				<ul><button onclick="conectare()" id="buton_conectare"><a>Conecteaza-te</a></button></ul>
+				<div id="Password"><ul> Password: <input id="password" type = "password"> </ul></div>
+				<ul><button onclick="conectare()" onkeypress="conectare()" id="buton_conectare"><a>Conecteaza-te</a></button></ul>
 				<ul><a href="Autentificare.html" id="Autentifica-te">Autentifica-te</a></ul>
 			</nav>
 		</aside>
